@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>RVENet</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">RVENet</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">BACKGROUND</a></li>
+        <li><a href="#section2">PURPOSE</a></li>
+        <li><a href="#section3">DATASET</a></li>
+        <li><a href="#section4">REQUEST ACCESS</a></li>
+        <li><a href="#section5">PUBLICATIONS</a></li>
+        <li><a href="#section6">CODES</a></li>
+        <li><a href="#section7">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/echo_2.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <!-- <h6>Graduate School of Management</h6> -->
+              <h2>RVENet</h2>
+              <h3>A Large Echocardiographic Dataset for the Deep Learning-Based Assessment of Right Ventricular Function</h3>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="section text2" data-section="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <div class="left-content">
+            <h4>BACKGROUND</em></h4>
+            <p>Two-dimensional (2D) echocardiography is the most frequently performed imaging test to assess right ventricular (RV) function. However, conventional 2D parameters are unable to reliably capture RV dysfunction across the entire spectrum of cardiac diseases. Three-dimensional (3D) echocardiography-derived RV ejection fraction (RVEF) – a sensitive and reproducible parameter that has been validated against cardiac magnetic resonance imaging – can bypass most of their limitations. Nonetheless, 3D echocardiography has limited availability, is more time-consuming, and requires significant human expertise. Therefore, novel automated tools that utilize readily available and routinely acquired 2D echocardiographic recordings to predict RVEF and detect RV dysfunction reliably would be highly desirable. To enable the implementation of such innovative solutions, publicly available and sufficiently large dedicated datasets would be pivotal. Motivated by this, we created the RVENet dataset comprising 3,583 labeled echocardiographic videos of 831 individuals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section text2" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <div class="left-content">
+            <h4>PURPOSE</em></h4>
+            <p>The RVENet dataset was primarily designed to enable the training and evaluation of deep learning models that predict RVEF from 2D echocardiographic videos. The fact that each 2D video is labeled with a 3D echocardiography-derived RVEF value makes our dataset one of its kind. Beyond serving as a benchmark dataset in the task mentioned above, the RVENet dataset may represent a valuable resource for several other research projects in the intersection of computer vision and cardiovascular imaging.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section why-us" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>DATASET</h2>
+            <p>The RVENet dataset consists of two major components: (i) a large set of echocardiographic videos (in DICOM format) and (ii) the corresponding labels and additional patient or video-related data (in a single separate CSV file).</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Echocardiographic Videos</a></li>
+              <li><a href='#tabs-2'>Labels</a></li>
+              <li><a href='#tabs-3'>Ethical Considerations</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/echo_2.gif" alt="">
+                    <p>&nbsp</p>
+                    <img src="assets/images/echo_3.gif" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Echocardiographic Videos</h4>
+                    <p>The RVENet dataset contains 3,583 2D apical four-chamber view echocardiographic videos from 944 examinations of 831 individuals in DICOM format. Each subject underwent one or more 3D transthoracic echocardiographic examinations between November 2013 and March 2021 at the Heart and Vascular Center of Semmelweis University. The dataset comprises ten distinct subgroups of subjects: (i) healthy adult volunteers (n=192), (ii) healthy pediatric volunteers (n=54), (iii) elite athletes (n=139), (iv) patients with heart failure and reduced left ventricular EF (LVEF, n=98), (v) patients with LV non-compaction cardiomyopathy (n=27), (vi) patients with aortic valve disease (n=85), (vii) patients with mitral valve disease (n=70), (viii) patients who underwent orthotopic heart transplantation (n=87), (ix) pediatric patients who underwent kidney transplantation (n=23), and (x) others (n=56).
+                      <br>Except for removing DICOM tags containing protected health information, no preprocessing was performed on the videos. Files were named according to the following naming convention: [patient hash]_[# of the echocardiographic examination of the given patient]_[# of the video in the given examination].dcm.
+                      <br>The two videos are apical four-chamber view recordings of a healthy subject (top) and a patient with heart failure (bottom).  
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="assets/images/labels_table.png" style="margin: 140px 0px 0px 0px;" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Labels</h4>
+                    <p>A comprehensive list and description of the labels are provided in Table 1. RV end-diastolic and end-systolic volumes, as well as RVEF, were computed from 3D echocardiographic recordings using a commercially available software solution (4D RV Function 2, TomTec Imaging, Unterschleissheim, Germany). These parameters were calculated only once for each echocardiographic examination. However, an examination may contain multiple 2D apical four-chamber view videos; thus, the same label was linked to all 2D videos within that given examination. Of note, the 3D recordings are not published as part of the dataset.
+                      <br>All of the 2D echocardiographic videos were reviewed by a single experienced echocardiographer who (i) assessed the image quality using a 5-point Likert scale (1 – non-diagnostic, 2 – poor, 3 – moderate, 4 – good, 5 – excellent), (ii) labeled videos as either standard or RV-focused, and (iii) determined LV/RV orientation (Mayo – RV on the right side and LV on the left side; Stanford – LV on the right side and RV on the left side). These annotations are also provided in a tabular format, along with the primary diagnosis, age, biological sex, and the train-validation splitting (80:20 ratio) that we used for the training and the evaluation of the models in our experiments. In addition, the ultrasound system utilized for video acquisition, the frame rate, and the total number of frames are also reported for each video.
+                      </p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4>Ethical Considerations</h4>
+                    <p>Prior to publication, all DICOM files of the RVENet dataset were processed to remove any protected health information. We also ensured that no protected health information was included among the published labels. Thus, the RVENet dataset complies with the General Data Protection Regulation (GDPR) of the European Union.
+                      <br>The publication of the RVENet dataset and protocol of our studies using the dataset conform with the principles outlined in the Declaration of Helsinki and were approved by the Semmelweis University Regional and Institutional Committee of Science and Research Ethics (approval No. 190/2020).
+                      </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section text2" data-section="section4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <div class="left-content">
+            <h4>REQUEST ACCESS</em></h4>
+            <p>
+              Please read the Research Use Agreement below for the official terms and conditions. If you agree to these terms of access, please apply for access by filling this <a href="https://forms.gle/teurXNjHpFtXwPYB6">form</a>.
+            </p>
+            <h4>Research Use Agreement</em></h4>
+            <p>By requesting access to the RVENet dataset, you agree to the following Research Use Agreement:</p>
+            <p>  
+              <br>1. Permission is granted to view and use the RVENet dataset without charge for personal, non-commercial research purposes only. Any commercial use, sale, or other monetization is prohibited.</li>
+              <br>2. Other than the rights granted herein, the authors and Semmelweis University retains all rights, title, and interest in the RVENet dataset.
+              <br>3. You may make a verbatim copy of the RVENet dataset for personal, non-commercial research use as permitted in this Research Use Agreement. If another user within your organization wishes to use the RVENet dataset, they must register as an individual user and comply with all the terms of this Research Use Agreement.
+              <br>4. YOU MAY NOT DISTRIBUTE, PUBLISH, OR REPRODUCE A COPY of any portion or all of the RVENet dataset to others without specific prior written permission from the authors and Semmelweis University.
+              <br>5. YOU MAY NOT SHARE THE DOWNLOAD LINK to the RVENet dataset with others. If another user within your organization wishes to use the RVENet dataset, they must register as an individual user and comply with all the terms of this Research Use Agreement.
+              <br>6. You must not modify, reverse engineer, decompile, or create derivative works from the RVENet dataset. You must not remove or alter any copyright or other proprietary notices in the RVENet dataset.
+              <br>7. The RVENet dataset is for non-clinical, Research Use Only. In no event shall data or images generated through the use of the RVENet dataset be used or relied upon in the diagnosis or provision of patient care.
+              <br>8. THE RVENET DATASET IS PROVIDED “AS IS,” AND THE AUTHORS, SEMMELWEIS UNIVERSITY, AND ITS COLLABORATORS DO NOT MAKE ANY WARRANTY, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, NOR DO THEY ASSUME ANY LIABILITY OR RESPONSIBILITY FOR THE USE OF THE RVENET DATASET.
+              <br>9. You will not make any attempt to re-identify any of the individual data subjects. Re-identification of individuals is strictly prohibited. Any re-identification of any individual data subject shall be immediately reported to the authors.
+              <br>10. Any violation of this Research Use Agreement or other impermissible use shall be grounds for immediate termination of use of the RVENet dataset. In the event that the authors or Semmelweis University determines that the recipient has violated this Research Use Agreement or other impermissible use has been made, they may direct that the undersigned data recipient immediately return all copies of the RVENet dataset and retain no copies thereof, even if you did not cause the violation or impermissible use.
+              <br>11. You agree to cite the papers listed among the publications in any work using the RVENet dataset.
+            </p>
+            <p>In consideration for your agreement to the terms and conditions contained here, the authors and Semmelweis University grant you permission to view and use the RVENet dataset for personal, non-commercial research. You may not otherwise copy, reproduce, retransmit, distribute, publish, commercially exploit, or otherwise transfer any material.</p>
+            </p>
+            <h4>Limitation of Use</em></h4>
+            <p>You may use the RVENet dataset for legal purposes only.
+              <br>You agree to indemnify and hold the authors and Semmelweis University harmless from any claims, losses, or damages, including legal fees, arising out of or resulting from your use of the RVENet dataset or your violation or role in the violation of these Terms. You agree to fully cooperate in the authors’ and Semmelweis University’s defense against any such claims. These Terms shall be governed by and interpreted in accordance with the laws of Hungary and the European Union.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section text" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <div class="left-content">
+            <h4>PUBLICATIONS</em></h4>
+            <p>Deep Learning-Based Prediction of Right Ventricular Ejection Fraction Using 2D Echocardiograms [under review]
+              <br>Tokodi M, Magyar B, Soós A, Takeuchi M, Tolvaj M, Lakatos BK, Kitano T, Nabeshima Y, Fábián A, Szigeti MB, Horváth A, Merkely B, Kovács A
+              <br>
+              <br>RVENet: A Large Echocardiographic Dataset for the Deep Learning-Based Assessment of Right Ventricular Function  <a href="assets/files/174.pdf"> [PDF] </a>
+              <br>Magyar B, Tokodi M, Soós A, Tolvaj M, Lakatos BK, Fábián A, Surkova E, Merkely B, Kovács A, Horváth A
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section text2" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <div class="left-content">
+            <h4>CODES</em></h4>
+            <p>The demo code for <u>Deep Learning-Based Prediction of Right Ventricular Ejection Fraction Using 2D Echocardiograms</u> is available <a href="https://github.com/mr-BM/RVEnet-demo">here</a>.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section text" data-section="section7">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 align-self-center">
+          <div class="left-content">
+            <h4>CONTACT</em></h4>
+            <p>
+              <br>For inquiries related to the dataset, contact Attila Kovács, M.D., Ph.D. (attila.kovacs@med.semmelweis-univ.hu; kovatti@gmail.com) and Márton Tokodi, M.D., Ph.D. (tokmarton@gmail.com).
+              <br>
+              <br>For inquiries related to the code base and technical implementation, contact Bálint Magyar, M.Sc. (magyar.balint@itk.ppke.hu).
+              <br>
+              <br>For inquiries related to our publications, contact the corresponding authors.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i>
+          
+           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
