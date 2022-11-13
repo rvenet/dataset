@@ -57,7 +57,7 @@ p {
 .section-heading h2 {
     margin-top: 100px;
     position: relative;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 0.5px;
@@ -182,8 +182,9 @@ a.menu-link { display: none; }
 
 .main-header .logo a {
     font-size: 36px;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 800;
-    color: #fff;
+    color: #e8af3e;
 }
 .main-header .logo a em {
     font-style: normal;
@@ -208,7 +209,7 @@ a.menu-link { display: none; }
 
 .main-menu li a {
     padding: 10px 15px;
-    font-size: 13px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
@@ -339,8 +340,9 @@ a.menu-link { display: none; }
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 64px;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 800;
-  color: #fff;
+  color: #e8af3e;
   letter-spacing: 1px;
 }
 
@@ -353,7 +355,8 @@ a.menu-link { display: none; }
 .main-banner .caption h3 {
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 32px;
+  font-size: 36px;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
@@ -533,6 +536,7 @@ section.why-us {
 #tabs ul li a {
   display: block;
   font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
@@ -585,7 +589,8 @@ section.why-us {
 }
 #tabs h4 {
     margin-top: 60px;
-    font-size: 32px;
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
@@ -595,7 +600,8 @@ section.why-us {
 #tabs p {
     color: #fff;
     font-size: 16px;
-    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
     line-height: 28px;
 }
 
@@ -891,12 +897,12 @@ section.courses .owl-carousel button.active {
 
 
 
-/* Text */
+/* Text grey*/
 
 section.text {
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #232f61;
+    background-color: #18233a;
     padding: 40px 0px;
 }
 
@@ -907,7 +913,8 @@ section.text .left-content {
 
 section.text .left-content p {
   font-style: normal;
-  text-align: justify;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
   font-size: 16px;
   letter-spacing: 0.5px;
 }
@@ -915,6 +922,7 @@ section.text .left-content p {
 section.text .left-content h4 {
     margin-top: 10px;
     font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -950,13 +958,13 @@ section.text .left-content .main-button {
 
 }
 
-/* Text */
+/* Text white*/
 
 section.text2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  padding: 40px 0px;
+  padding: 70px 0px;
 }
 
 section.text2 .left-content {
@@ -966,8 +974,9 @@ font-size: 22px;
 
 section.text2 .left-content p {
 font-style: normal;
+font-family: 'Source Sans Pro', sans-serif;
 color: #232f61;
-text-align: justify;
+text-align: left;
 font-size: 16px;
 letter-spacing: 0.5px;
 }
@@ -975,6 +984,7 @@ letter-spacing: 0.5px;
 section.text2 .left-content h4 {
   margin-top: 10px;
   font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #232f61;
   font-weight: 800;
   letter-spacing: 0.5px;
