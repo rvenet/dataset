@@ -370,7 +370,7 @@ a.menu-link { display: none; }
   }
 
   .main-banner .caption h2 {
-    font-size: 58px;
+    font-size: 96px;
   }
 
 }
@@ -621,7 +621,7 @@ section.why-us {
 .tabs-content img {
     width: 100%;
     overflow: hidden;
-    padding-right: 45px;
+    padding-right: 0px;
 }
 
 @media screen and (max-width: 767px) {
@@ -903,7 +903,7 @@ section.text {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #18233a;
-    padding: 40px 0px;
+    padding: 0px 10px 0px 0px;
 }
 
 section.text .left-content {
@@ -964,7 +964,7 @@ section.text2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  padding: 70px 0px;
+  padding: 0px 10px 0px 0px;
 }
 
 section.text2 .left-content {
