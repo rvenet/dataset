@@ -274,10 +274,10 @@ a.menu-link { display: none; }
     border: none;
 }
 
-.main-nav li:hover a,
+/* .main-nav li:hover a,
 .main-nav li.active a {
     border: 2px solid #e8af3e;
-}
+} */
 
 @media (max-width: 950px) {
   .main-nav li:hover a,
@@ -895,6 +895,16 @@ section.courses .owl-carousel button.active {
 
 
 
+/* Figure caption*/
+
+.figure-caption{
+  color:rgb(255, 255, 255);
+  font-size:20px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  caption-side:top;
+}
 
 
 /* Text grey*/
